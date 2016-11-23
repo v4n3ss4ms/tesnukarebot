@@ -12,7 +12,7 @@ def listener(messages):
             chat_id = str(m.chat.id)
             user_name = str(m.chat.first_name)
             user_text = m.text
-            print user_name + " [" + chat_id + "]: " + user_text
+            print (user_name + " [" + chat_id + "]: " + user_text)
 
 bot.set_update_listener(listener)  # register listener
 
